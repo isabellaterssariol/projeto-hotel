@@ -14,19 +14,79 @@
     <header>
         <a href="#"><img src="img/logo.png" alt="Hotel Paraíso"></a>
         <nav>
-            <li><a href="#">O HOTEL</a></li>
+            <li><a href="#">HOTEL</a></li>
             <li><a href="#">ESTRUTURA</a></li>
             <li><a href="#">RESERVAS</a></li>
             <li><a href="#">CONTATO</a></li>
         </nav>
     </header>
     <section class="hero">
-        <h1>Conheça este paraíso chamado Itacaré</h1>
-        <h3>"Aconchego, conforto, simpatia e alto astral"</h3>
+        <div class="home">
+            <h1>Conheça este paraíso chamado Itacaré</h1>
+            <h3>"Aconchego, conforto, simpatia e alto astral"</h3>
+        </div>
         <a class="btn" href="">Saiba mais</a>
     </section>
 
-    
+    <section class="reserva">
+        <div>
+            <h2>FAÇA SUA RESERVA!</h2>
+            <p>Cheque a disponibilidade de nossos quartos, e venha curtir sua estadia no Hotel Paraíso!</p>
+            <form action="cadastro.php">
+                <label for="icheckin">Check-in:</label>
+                <input type="date" name="check" id="icheckin" required>
+
+                <label for="icheckout">Check-out:</label>
+                <input type="date" name="checkout" id="icheckout" required>
+
+                <label for="iquartos">Quartos:</label>
+                <select name="quartos" id="iquartos" required>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+
+                <label for="iadultos">Adultos:</label>
+                <select name="adultos" id="iadultos">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+
+                <label for="ikids">Crianças:</label>
+                <select name="kids" id="ikids">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+
+                <p>
+                    <input class="reservar" type="submit" value="RESERVAR">
+                </p>
+            </form>
+        </div>
+    </section>
 
     <section class="conheca">
         <h3>Conheça o Hotel Paraíso!</h3>
@@ -68,7 +128,7 @@
         <p>Assine nossa newsletter para se manter atualizado com nossos serviçoes e promoções culturais.</p>
         <hr>
         <form action="post">
-            <input type="email" name="email" id="iemail" placeholder="E-mail">
+            <input type="email" name="email" id="iemail" placeholder="E-mail" required>
             <button>Cadastrar</button>
         </form>
     </section>
