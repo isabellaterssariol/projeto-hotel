@@ -2,6 +2,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Permanent+Marker&family=Raleway:wght@100;300;400;500;700;900&display=swap');
+
+
 
 /*Config. gerais*/
 * {
@@ -41,11 +44,24 @@ header img {
     width: 300px;
 }
 header nav {
+    
     display: flex;
     gap: 35px;
 }
 header li a {
-    color: #191c03;
+    color: white;
+    background-color: #c4c63bd7;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+header li a:hover {
+    background-color: #515a0d;
+    color: #d4d655d7;
+    border: 1px solid #343a06;
+    transform: translate(-3px, -3px);
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.548);
+    transition: transform 0.3s;
 }
 
 
@@ -55,7 +71,7 @@ header li a {
     background-image: url(../img/hero.jpg);
     background-size: cover;
     background-position: center top;
-    min-height: 100vh;
+    min-height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -63,17 +79,20 @@ header li a {
     text-align: center;
 }
 .hero h1 {
-    font-size: 3.2em;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 3em;
+    color: white;
     margin-bottom: 15px;
 }
 .hero h3 {
-    font-size: 2em;
+    font-family: 'Delicious Handrawn', cursive;;
+    font-size: 1.8em;
     margin-bottom: 15px;
 }
 .hero .btn {
-    background-color: white;
+    background-color: #c4c63bd7;
     border-radius: 4px;
-    color: #191c03;
+    color: white;
     padding: 20px 50px;
     text-transform: uppercase;
 }
